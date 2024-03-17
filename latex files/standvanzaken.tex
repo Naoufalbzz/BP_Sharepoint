@@ -1,0 +1,82 @@
+\chapter{\IfLanguageName{dutch}{Stand van zaken}{State of the art}}%
+\label{ch:stand-van-zaken}
+\newcommand{\subtitle}[1]{%
+    \posttitle{%
+        \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+    }
+
+% Tip: Begin elk hoofdstuk met een paragraaf inleiding die beschrijft hoe
+% dit hoofdstuk past binnen het geheel van de bachelorproef. Geef in het
+% bijzonder aan wat de link is met het vorige en volgende hoofdstuk.
+
+% Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
+\begin{comment}
+Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+
+Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
+
+\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+
+Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
+\end{comment}
+(TODO: omzetten markdown naar latex + sources bijzetten + history aanvullen + use case zoeken bij echt bedrijf + opmaak van tussentitels fixen)
+SharePoint is een cloudgebaseerde dienst die ontworpen is voor communicatie en samenwerking en vormt een uitstekende keuze voor het bouwen van een kennisbank. Als eerst zal de geschiedenis van Sharepoint besproken worden om een duidelijk beeld te krijgen van de opkomst. Het project dat uiteindelijk eindige in de creatie van Sharepoint heette eerst 'Office Server' en 'Tahoe'. De eerste verschijning hiervan was tijdens de ontwikkelingscyclus van Office XP, dit is de periode waarin Microsoft Office XP ontwikkelde en klaarmaakte voor release in 2001. 
+
+\subtitle{Sharepoint fundamenten} 
+SharePoint, een veelzijdig platform ontwikkeld door Microsoft, faciliteert samenwerking en informatiebeheer binnen organisaties. Het biedt een rijke set aan functies voor documentbeheer, samenwerking, en het bouwen van intranet sites. In deze tekst verkennen we de fundamenten van SharePoint, waaronder de basiscomponenten, de architectuur, en de kernfunctionaliteiten die het platform aanbiedt.
+
+\subtitle{Basiscomponenten van SharePoint}
+
+SharePoint is opgebouwd uit verschillende basiscomponenten die samenwerken om een geïntegreerde omgeving voor samenwerking en informatiebeheer te bieden. Enkele van de belangrijkste componenten zijn:
+
+- **Sites**: De primaire structuureenheid binnen SharePoint, sites bieden een kader voor het groeperen van gerelateerde pagina's, documentbibliotheken, lijsten, en andere elementen.
+- **Lijsten en bibliotheken**: Deze componenten worden gebruikt voor het opslaan van gegevens, documenten en andere informatie. Lijsten kunnen worden gezien als tabellen in een database, terwijl bibliotheken specifiek zijn ontworpen voor het beheer van documenten.
+- **Webonderdelen**: Kleine, herbruikbare componenten die kunnen worden gebruikt om functionaliteit of inhoud aan SharePoint-pagina's toe te voegen. Voorbeelden omvatten kalenders, lijsten, en aangepaste applicaties.
+
+\subtitle{Architectuur}
+
+De architectuur van SharePoint is ontworpen om flexibel en schaalbaar te zijn, zodat het kan worden aangepast aan de behoeften van verschillende organisaties. Het platform kan worden geïmplementeerd in de cloud (via SharePoint Online), on-premises, of als een hybride oplossing die beide benadert. De keuze tussen deze implementatiemodellen hangt af van de specifieke eisen van de organisatie op het gebied van controle, beveiliging, en aanpassingsvermogen.
+
+\subtitle{Kernfunctionaliteiten}
+
+SharePoint biedt een breed scala aan functionaliteiten die organisaties ondersteunen in hun dagelijkse operaties, waaronder:
+
+- **Documentbeheer**: Met krachtige functies zoals versiebeheer, goedkeuringsstromen, en metadata management, helpt SharePoint organisaties bij het effectief beheren van hun documenten.
+- **Samenwerking**: SharePoint faciliteert samenwerking binnen teams door middel van gedeelde werkruimtes, integratie met Microsoft Teams, en real-time bewerkingsmogelijkheden voor documenten.
+- **Zoeken**: Het platform biedt uitgebreide zoekfunctionaliteiten, waardoor gebruikers snel de informatie kunnen vinden die ze nodig hebben.
+- **Intranet en extranet sites**: Organisaties kunnen SharePoint gebruiken om intranet sites voor interne communicatie en samenwerking te bouwen, evenals extranet sites voor interactie met externe partijen.
+- **Aanpassing en uitbreidbaarheid**: SharePoint stelt organisaties in staat om het platform aan te passen en uit te breiden met aangepaste oplossingen en integraties, dankzij een rijke set aan ontwikkelingstools en API's.
+
+SharePoint speelt een cruciale rol in het digitale werkpleklandschap van veel organisaties, dankzij de flexibiliteit, schaalbaarheid, en rijke functionaliteit. Door de fundamenten van SharePoint te begrijpen, kunnen organisaties beter bepalen hoe ze het platform effectief kunnen inzetten om hun samenwerkings- en informatiebeheerdoelstellingen te bereiken.
+
+---------------
+
+\subtitle{Deployment models}
+SharePoint, het robuuste platform van Microsoft voor samenwerking en contentbeheer, biedt verschillende implementatiemodellen om tegemoet te komen aan de diverse behoeften van organisaties. Elk implementatiemodel biedt unieke voordelen en aandachtspunten, waardoor het cruciaal is voor bedrijven om het model te kiezen dat het beste aansluit bij hun operationele vereisten, technische capaciteiten en strategische doelen. In deze tekst verkennen we de verschillende implementatiemodellen voor SharePoint: SharePoint Online, SharePoint Server (on-premises) en SharePoint Hybrid.
+
+\subtitle{SharePoint Online}
+SharePoint Online, een cloudgebaseerde service gehost door Microsoft, maakt deel uit van het Office 365-pakket. Dit model elimineert de noodzaak voor organisaties om de infrastructuur te beheren, aangezien Microsoft zorgt voor de servers, opslag en beveiliging. Dit biedt organisaties het voordeel van schaalbaarheid, waardoor ze gemakkelijk gebruikers kunnen toevoegen of verwijderen en opslagruimte kunnen aanpassen op basis van hun behoeften. Bovendien zorgt SharePoint Online voor automatische updates en patches, wat betekent dat organisaties altijd toegang hebben tot de nieuwste functies en beveiligingsverbeteringen zonder zelf het onderhoud te hoeven beheren. Een belangrijk voordeel is ook de integratie met andere Office 365-diensten, waardoor een naadloze samenwerkingsomgeving ontstaat.
+
+\subtitle{SharePoint Server (on-premises)}
+Voor organisaties die volledige controle willen behouden over hun SharePoint-omgeving, biedt SharePoint Server een on-premises oplossing. Dit model vereist dat organisaties hun eigen servers, opslag en netwerk beheren. Hoewel dit meer controle en aanpassingsmogelijkheden biedt, brengt het ook de verantwoordelijkheid met zich mee voor het uitvoeren van updates, patches en het beheren van de beveiliging. SharePoint Server is ideaal voor organisaties met strenge gegevensbeveiligingsvereisten of die specifieke aanpassingen en integraties nodig hebben die niet beschikbaar zijn in de cloud. Dit model kan echter hogere initiële en lopende kosten met zich meebrengen vanwege de vereiste voor hardware, softwarelicenties en IT-personeel voor onderhoud.
+
+\subtitle{SharePoint Hybrid}
+Het hybride model combineert elementen van zowel SharePoint Online als SharePoint Server, waardoor organisaties het beste van twee werelden kunnen benutten. In een hybride omgeving kunnen organisaties sommige gegevens en applicaties in de cloud hosten terwijl ze andere lokaal houden. Dit is bijzonder nuttig voor organisaties die geleidelijk naar de cloud willen migreren of die bepaalde gegevens om regelgevende of beleidsredenen on-premises moeten houden. Een hybride implementatie biedt flexibiliteit in hoe en waar werk wordt gedaan, met naadloze integratie tussen cloud- en on-premises omgevingen, waardoor gebruikers een uniforme ervaring krijgen, ongeacht waar de gegevens worden gehost.
+
+Elk van deze implementatiemodellen heeft zijn eigen set voordelen en uitdagingen, en de keuze voor een specifiek model hangt af van de specifieke behoeften en omstandigheden van een organisatie. Het is belangrijk voor organisaties om hun bedrijfsdoelstellingen, technische vereisten en budgettaire overwegingen zorgvuldig af te wegen bij het kiezen van het meest geschikte SharePoint-implementatiemodel.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\lipsum[7-20]
